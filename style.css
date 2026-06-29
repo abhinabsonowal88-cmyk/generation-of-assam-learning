@@ -1,1 +1,542 @@
+/* ========================================
+   Generation of Assam Learning
+   Premium Stylesheet
+======================================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+.header{
+    background:#ffffff;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h2{
+    color:#0F3D91;
+    font-size:24px;
+}
+
+.logo p{
+    color:#666;
+    font-size:13px;
+}
+
+.navbar{
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+    color:#222;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#0F3D91;
+}
+
+/* Hero */
+
+.hero{
+    position:relative;
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    max-width:700px;
+    text-align:center;
+    padding:20px;
+}
+
+.badge{
+    display:inline-block;
+    background:#F4B400;
+    color:#000;
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:54px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.primary-btn{
+    background:#0F3D91;
+    color:#fff;
+}
+
+.secondary-btn{
+    background:#fff;
+    color:#0F3D91;
+}
+
+.search-box{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+}
+/* ===============================
+   Sections
+=================================*/
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#0F3D91;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:16px;
+}
+
+/* ===============================
+   Category Cards
+=================================*/
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+}
+
+.category-card h3{
+    color:#0F3D91;
+    margin-bottom:15px;
+}
+
+.category-card a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    background:#0F3D91;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+/* ===============================
+   Featured Book
+=================================*/
+
+.featured-book{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.book-image img{
+    width:300px;
+    border-radius:15px;
+}
+
+.book-content{
+    flex:1;
+}
+
+.featured-tag{
+    background:#F4B400;
+    color:#000;
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.book-content h2{
+    margin:20px 0;
+    color:#0F3D91;
+}
+
+.book-content ul{
+    margin:20px 0;
+    padding-left:20px;
+}
+
+.book-content h3{
+    color:#0F3D91;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.book-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* ===============================
+   Ebook Cards
+=================================*/
+
+.books-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.book-card{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.book-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.book-card h3{
+    margin:15px 0;
+}
+
+.book-card p{
+    color:#0F3D91;
+    font-weight:700;
+    font-size:20px;
+}
+
+.book-card button{
+    margin-top:15px;
+    background:#0F3D91;
+    color:#fff;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ===============================
+   Statistics
+=================================*/
+
+.stats{
+    background:#0F3D91;
+}
+
+.stats .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    text-align:center;
+    color:#fff;
+}
+
+.stat-box h2{
+    font-size:42px;
+}
+
+.stat-box p{
+    margin-top:10px;
+}/* ===============================
+   Why Choose Us
+=================================*/
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+    color:#0F3D91;
+    margin-bottom:15px;
+}
+
+/* ===============================
+   Testimonials
+=================================*/
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.review-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.review-card h3{
+    color:#F4B400;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.review-card strong{
+    display:block;
+    margin-top:15px;
+    color:#0F3D91;
+}
+
+/* ===============================
+   FAQ
+=================================*/
+
+.faq-item{
+    background:#fff;
+    margin-bottom:20px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+}
+
+.faq-item h3{
+    color:#0F3D91;
+    margin-bottom:10px;
+}
+
+/* ===============================
+   Contact
+=================================*/
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-family:'Poppins',sans-serif;
+}
+
+.contact textarea{
+    height:150px;
+    resize:vertical;
+}
+
+.contact button{
+    background:#0F3D91;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* ===============================
+   Footer
+=================================*/
+
+footer{
+    background:#0F3D91;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ===============================
+   Mobile Responsive
+=================================*/
+
+@media(max-width:768px){
+
+.header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.navbar{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero-content h1{
+    font-size:36px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.search-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.search-box input{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.search-box button{
+    width:100%;
+    border-radius:8px;
+}
+
+.featured-book{
+    flex-direction:column;
+}
+
+.book-image img{
+    width:100%;
+    max-width:320px;
+}
+
+}
+.search-box input{
+    width:320px;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:8px 0 0 8px;
+}
+
+.search-box button{
+    background:#F4B400;
+    border:none;
+    padding:15px 22px;
+    cursor:pointer;
+    font-weight:600;
+    border-radius:0 8px 8px 0;
+}
