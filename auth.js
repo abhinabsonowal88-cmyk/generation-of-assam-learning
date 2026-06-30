@@ -16,3 +16,35 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export { auth };auth.js
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+
+const auth = getAuth();
+
+const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
+const userSection = document.getElementById("userSection");
+const userEmail = document.getElementById("userEmail");
+const logoutBtn = document.getElementById("logoutBtn");
+
+// 👀 Listen login state
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // ✅ USER LOGGED IN
+    loginBtn.style.display = "none";
+    signupBtn.style.display = "none";
+
+    userSection.style.display = "block";
+    userEmail.textContent = user.email;
+  } else {
+    // ❌ USER NOT LOGGED IN
+    loginBtn.style.display = "inline-block";
+    signupBtn.style.display = "inline-block";
+
+    userSection.style.display = "none";
+  }
+});
+
+// 🚪 Logout
+logoutBtn.addEventListener("click", () => {
+  signOut(auth);
+});
