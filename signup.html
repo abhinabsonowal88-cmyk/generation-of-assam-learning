@@ -1,46 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - Generation of Assam Learning</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0F3D91;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.signup-box{
+background:#fff;
+width:360px;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+color:#0F3D91;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#0F3D91;
+color:#fff;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0b2f72;
+}
+
+p{
+margin-top:15px;
+text-align:center;
+}
+
+a{
+color:#0F3D91;
+text-decoration:none;
+font-weight:600;
+}
+</style>
 </head>
+
 <body>
+
+<div class="signup-box">
 
 <h2>Create Account</h2>
 
 <form id="signup-form">
-  <input type="text" id="name" placeholder="Full Name" required><br><br>
 
-  <input type="email" id="email" placeholder="Email" required><br><br>
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
 
-  <input type="password" id="password" placeholder="Password" required><br><br>
+<input
+type="password"
+id="password"
+placeholder="Password"
+required>
 
-  <button type="submit">Sign Up</button>
+<button type="submit">
+Sign Up
+</button>
+
 </form>
 
 <p id="message"></p>
 
+<p>
+Already have an account?
+<a href="login.html">Log In</a>
+</p>
+
+</div>
+
 <script type="module">
 import { auth } from "./auth.js";
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-const form = document.getElementById("signup-form");
-const message = document.getElementById("message");
+import {
+createUserWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+const form=document.getElementById("signup-form");
+const message=document.getElementById("message");
 
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+form.addEventListener("submit",async(e)=>{
 
-  try {
-    await createUserWithEmailAndPassword(auth, email, password);
-    message.textContent = "Account created successfully!";
-    window.location.href = "login.html";
-  } catch (error) {
-    message.textContent = error.message;
-  }
+e.preventDefault();
+
+const email=document.getElementById("email").value;
+const password=document.getElementById("password").value;
+
+try{
+
+await createUserWithEmailAndPassword(auth,email,password);
+
+alert("Account created successfully!");
+
+window.location.href="login.html";
+
+}catch(error){
+
+message.innerHTML=error.message;
+
+}
+
 });
 </script>
 
