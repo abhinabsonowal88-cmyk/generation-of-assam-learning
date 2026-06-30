@@ -540,3 +540,21 @@ footer p{
     font-weight:600;
     border-radius:0 8px 8px 0;
 }
+.header-btn{
+    display:flex;
+    gap:10px;
+}
+
+.login-btn,
+.signup-btn{
+    padding:10px 20px;
+    background:#007bff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.signup-btn{
+    background:#28a745;
+}
