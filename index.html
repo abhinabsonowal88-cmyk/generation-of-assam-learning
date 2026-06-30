@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generation of Assam Learning — Premium Ebooks for Govt. Exam Aspirants</title>
+<meta name="description" content="Premium ebooks and smart preparation for SSC GD, Assam Police, Assam Rifles, CAPF, CRPF, CISF, BSF, ITBP, SSB and other government exams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-mark">GA</div>
+      <div>
+        Generation of Assam Learning
+        <small>PREMIUM EXAM PREP</small>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#ebooks">Ebooks</a>
+      <a href="#categories">Categories</a>
+      <a href="#search">Search</a>
+      <a href="#about">About Us</a>
+      <a href="#testimonials">Success Stories</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="icon-btn" id="themeToggle" title="Toggle dark mode">🌙</button>
+      <div id="authArea">
+        <button class="btn btn-outline btn-sm" onclick="openAuth('login')">Login</button>
+        <button class="btn btn-gold btn-sm" onclick="openAuth('signup')">Sign Up</button>
+      </div>
+      <button class="mobile-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Trusted by aspirants across Assam</span>
+      <h1>Generation of <em>Assam</em> Learning</h1>
+      <p class="sub">Premium ebooks &amp; smart preparation for SSC GD, Assam Police, Assam Rifles, UPSC CAPF, CRPF, CISF, BSF, ITBP, SSB, and other government exams.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-gold" onclick="document.getElementById('ebooks').scrollIntoView({behavior:'smooth'})">Get Started →</button>
+        <button class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.35)" onclick="document.getElementById('ebooks').scrollIntoView({behavior:'smooth'})">Browse Ebooks</button>
+      </div>
+
+      <div class="search-wrap" id="search">
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="text" id="heroSearch" placeholder="Search SSC GD, Assam Police SI, BSF, Railway..." autocomplete="off">
+          <button class="btn btn-gold btn-sm">Search</button>
+        </div>
+        <div class="suggestions" id="suggestBox"></div>
+      </div>
+
+      <div class="hero-stats">
+        <div><b>10,000+</b><span>Students</span></div>
+        <div><b>500+</b><span>Premium Ebooks</span></div>
+        <div><b>4.9/5</b><span>Avg. Rating</span></div>
+        <div><b>95%</b><span>Positive Reviews</span></div>
+      </div>
+    </div>
+
+    <div class="admit-card">
+      <div class="admit-top">
+        <div>
+          <div class="ac-brand">Generation of Assam Learning</div>
+          <div class="ac-title">Aspirant Profile</div>
+        </div>
+        <div class="admit-photo"><img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200&auto=format&fit=crop" alt="Aspirant"></div>
+      </div>
+      <div class="admit-row"><span>Candidate</span><b>Rituraj Borah</b></div>
+      <div class="admit-row"><span>Exam</span><b>Assam Police SI</b></div>
+      <div class="admit-row"><span>Ebooks Completed</span><b>14 / 14</b></div>
+      <div class="admit-row"><span>Mock Score</span><b>187 / 200</b></div>
+      <div class="admit-row" style="border-bottom:none;"><span>District</span><b>Jorhat, Assam</b></div>
+      <div class="admit-status">STATUS: SELECTED ✓</div>
+    </div>
+  </div>
+</header>
+
+<!-- WHY TRUST US -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Why aspirants choose us</span>
+      <h2>Built on trust, sharpened by results</h2>
+      <p>Every ebook is written and updated by educators who track the Assam recruitment cycle closely — from SSC GD to Assam Rifles.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card"><div class="ic">📘</div><h4>High Quality Study Material</h4><p>Crafted by subject experts, structured for fast revision.</p></div>
+      <div class="trust-card"><div class="ic">🗓️</div><h4>Latest Syllabus</h4><p>Updated continuously to match current exam patterns.</p></div>
+      <div class="trust-card"><div class="ic">💰</div><h4>Affordable Pricing</h4><p>Premium content priced for every aspirant's budget.</p></div>
+      <div class="trust-card"><div class="ic">⚡</div><h4>Instant Download</h4><p>Get access the moment your payment is confirmed.</p></div>
+      <div class="trust-card"><div class="ic">🔒</div><h4>Secure Payment</h4><p>Encrypted checkout with trusted payment partners.</p></div>
+      <div class="trust-card"><div class="ic">🎓</div><h4>Thousands of Happy Students</h4><p>A growing community of selected candidates.</p></div>
+      <div class="trust-card"><div class="ic">📍</div><h4>Trusted Across Assam</h4><p>Built specifically for Assam's recruitment landscape.</p></div>
+      <div class="trust-card"><div class="ic">☎️</div><h4>24×7 Support</h4><p>Real help, whenever you need it — WhatsApp or email.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="stats-band">
+      <div><b class="counter" data-target="10000">0</b><span>Students</span></div>
+      <div><b class="counter" data-target="500">0</b><span>Premium Ebooks</span></div>
+      <div><b class="counter" data-target="49" data-decimal="10">0</b><span>Avg. Rating /5</span></div>
+      <div><b class="counter" data-target="95">0</b><span>% Positive Reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Browse by exam</span>
+      <h2>Every category, fully covered</h2>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card" onclick="filterByCat('SSC GD')"><div class="dot"></div><div><span>SSC GD</span><small>48 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('Assam Police')"><div class="dot"></div><div><span>Assam Police</span><small>62 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('Assam Rifles')"><div class="dot"></div><div><span>Assam Rifles</span><small>30 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('CRPF')"><div class="dot"></div><div><span>CRPF</span><small>21 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('BSF')"><div class="dot"></div><div><span>BSF</span><small>18 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('CISF')"><div class="dot"></div><div><span>CISF</span><small>15 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('ITBP')"><div class="dot"></div><div><span>ITBP</span><small>14 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('SSB')"><div class="dot"></div><div><span>SSB</span><small>12 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('Railway')"><div class="dot"></div><div><span>Railway</span><small>26 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('Banking')"><div class="dot"></div><div><span>Banking</span><small>20 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('General Knowledge')"><div class="dot"></div><div><span>General Knowledge</span><small>34 ebooks</small></div></div>
+      <div class="cat-card" onclick="filterByCat('Current Affairs')"><div class="dot"></div><div><span>Current Affairs</span><small>monthly</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EBOOKS -->
+<section id="ebooks">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The store</span>
+      <h2>Premium ebooks, built to get you selected</h2>
+    </div>
+    <div class="filter-row" id="filterRow">
+      <div class="chip active" data-cat="All">All</div>
+      <div class="chip" data-cat="SSC GD">SSC GD</div>
+      <div class="chip" data-cat="Assam Police">Assam Police</div>
+      <div class="chip" data-cat="Assam Rifles">Assam Rifles</div>
+      <div class="chip" data-cat="General Knowledge">GK</div>
+      <div class="chip" data-cat="Current Affairs">Current Affairs</div>
+      <div class="chip" data-cat="Skills">Skills</div>
+    </div>
+    <div class="book-grid" id="bookGrid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Success stories</span>
+      <h2>Selected candidates, real results</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-top"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop"><div><h5>Manash Kalita</h5><span>SSC GD — Selected 2025</span></div></div>
+        <div class="stars">★★★★★</div>
+        <p>The SSC GD Complete Guide broke down every section so I could revise fast in the final month. Cleared on my first attempt.</p>
+      </div>
+      <div class="test-card">
+        <div class="test-top"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"><div><h5>Priyanka Das</h5><span>Assam Police SI — Selected 2025</span></div></div>
+        <div class="stars">★★★★★</div>
+        <p>The mock tests and shortcut tricks for maths saved me so much time during the actual exam. Highly recommend to every aspirant.</p>
+      </div>
+      <div class="test-card">
+        <div class="test-top"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"><div><h5>Bikash Sharma</h5><span>Assam Rifles — Selected 2024</span></div></div>
+        <div class="stars">★★★★★</div>
+        <p>Affordable, well-organised, and genuinely updated for the latest pattern. Support team answered every doubt on WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Questions about an exam or ebook?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list">
+        <div class="contact-item"><div class="ic">💬</div><div><b>WhatsApp</b><span>+91 90000 00000 — fastest response</span></div></div>
+        <div class="contact-item"><div class="ic">✉️</div><div><b>Email</b><span>support@generationofassamlearning.com</span></div></div>
+        <div class="contact-item"><div class="ic">📍</div><div><b>Based in</b><span>Guwahati, Assam, India</span></div></div>
+        <div class="contact-item"><div class="ic">🌐</div><div><b>Follow us</b><span>Instagram · Facebook · YouTube · Telegram</span></div></div>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This is a UI demo — connect a backend (e.g. Firebase Functions + email service) to receive real messages.');">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <input type="text" placeholder="Exam you're preparing for">
+        <textarea placeholder="Your message" required></textarea>
+        <button class="btn btn-navy" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:14px;">
+          <div class="brand-mark">GA</div>
+          <div>Generation of Assam Learning</div>
+        </div>
+        <p style="font-size:13.5px;color:#AEB9CC;line-height:1.6;max-width:280px;">Premium ebooks and smart preparation for government exam aspirants across Assam and beyond.</p>
+        <div class="social" style="margin-top:16px;">
+          <a href="#">f</a><a href="#">ig</a><a href="#">yt</a><a href="#">tg</a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Success Stories</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#ebooks">Ebooks</a>
+        <a href="#categories">Categories</a>
+        <a href="#search">Search</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Generation of Assam Learning. All rights reserved.</span>
+      <span>Made with care in Assam, India.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- AUTH MODAL -->
+<div class="modal-bg" id="authModal">
+  <div class="modal">
+    <button class="close" onclick="closeAuth()">✕</button>
+    <div class="tabs">
+      <button id="tabLogin" class="active" onclick="switchTab('login')">Login</button>
+      <button id="tabSignup" onclick="switchTab('signup')">Sign Up</button>
+    </div>
+    <h3 id="modalTitle">Welcome back</h3>
+    <p class="note" id="modalNote">This is a UI demo. Connect Firebase Authentication to enable real login.</p>
+    <input type="text" id="signupName" placeholder="Full name" style="display:none;">
+    <input type="email" placeholder="Email address">
+    <input type="password" placeholder="Password">
+    <button class="btn btn-navy" style="width:100%;margin-bottom:10px;" onclick="mockLogin()">Continue</button>
+    <button class="btn btn-outline" style="width:100%;" onclick="mockLogin()">🔵 Continue with Google</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
